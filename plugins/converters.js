@@ -171,3 +171,21 @@ Module({
     
     })
 }));
+
+Module({
+    pattern: "exif",
+    fromMe: isPrivate,
+    desc: "get exif data",
+    type: "converter",
+}, async (message, match, m) => {
+   if (!message.reply_message || !message.reply_message.sticker)
+   return await message.reply("_Reply to sticker_");
+   let img = new Image();
+   await img.load(await message.reply_message.download());
+   const exif = JSON.parse(img.exif.slice(22).toString());
+   const stickerPackId = exif['sticker-pack-id'];
+   const stickerPackName = exif['sticker-pack-name'];
+   const stickerPackPublisher = exif['sticker-pack-publisher'];
+   const cap = (`*Sticker Pack ID -->* ${stickerPackId}\n\n*Pack name -->* ${stickerPackName}\n\n*Publisher Name -->* ${stickerPackPublisher}`)
+   await message.reply(cap);
+});
