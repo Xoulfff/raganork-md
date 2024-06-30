@@ -1,4 +1,4 @@
-const fs = require('fs');
+vconst fs = require('fs');
 const { Sequelize } = require('sequelize');
 const isVPS = !(__dirname.startsWith("/rgnk") || __dirname.startsWith("/skl"));
 const isHeroku = __dirname.startsWith("/skl");
@@ -25,12 +25,18 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "https://i.imgur.com/KCnoMM2.jpg Hey {sender}, I'm alive \n Uptime: {uptime}",
+    ALIVE: process.env.ALIVE || "*✰ 𝐇͢ᴇ⃗ʏʏ᷏ {sender}*
+ 
+*✰ 𝐘͢ᴇ⃗ʜʜ᷏ 𝐈͢ᴍ ᷏𝐇͢ᴇ⃗ʀᴇ᷏*
+
+*✰ 𝐘͢ᴇ⃗ʜʜ᷏ 𝐈͢ᴛ⃗s᷏ 𝐌͢ᴇ 𝐗͢ᴏ⃗ᴜʟ᷏ 𝐒͢ᴇ⃗ʀ᷏*
+
+*✰ 𝐄͢ᴅ⃗ᴀ᷏ 𝐌͢ᴡ⃗ᴏɴᴇ᷏ 𝐇͢ᴀ⃗ᴘᴘʏ᷏ 𝐀͢ʟ⃗ʟᴇ᷏*",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
-    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || false,
+    ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
     MANGLISH_CHATBOT: convertToBool(process.env.MANGLISH_CHATBOT) || false,
-    ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || false,
+    ADMIN_ACCESS: convertToBool(process.env.ADMIN_ACCESS) || true,
     PLATFORM:isHeroku?"Heroku":isRailway?"Railway":isKoyeb?"Koyeb":"Other server",isHeroku,isKoyeb,isVPS,isRailway,
     AUTOMUTE_MSG: process.env.AUTOMUTE_MSG || '_Group automuted!_\n_(edit AUTOMUTE_MSG)_',
     ANTIWORD_WARN: process.env.ANTIWORD_WARN || '',
@@ -49,20 +55,58 @@ module.exports = {
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
-    SESSION: (process.env.SESSION || process.env.SESSION_ID || '').trim() || '',
+    SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~8f53e0c9fef3d256acaace487f483f2f:446b3768747a672f6b386b3d').trim() || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || 'Raganork;Skl11;0;https://i.imgur.com/P7ziVhr.jpeg;https://chat.whatsapp.com/Dt3C4wrQmt0GG6io1IBIHb',
+    BOT_INFO: process.env.BOT_INFO || '𝐗ᴏᴜᴋ 𝐌ᴅ;𝐗ᴏᴜʟ 𝐒ᴇʀ;0;https://i.imgur.com/CoAcgTb.jpeg;https://chat.whatsapp.com/BxR0LrCkAVKGHriVvo7sKy',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "Raganork",
-    BOT_NAME: process.env.BOT_NAME || 'Raganork',
-    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? 'ꪶ͢٭𝑺𝜣𝑼𝑹𝛢𝑽𝑲𝑳¹¹ꫂ;Raganork MD bot;https://i.imgur.com/P7ziVhr.jpeg' : process.env.AUDIO_DATA,
+    STICKER_DATA: process.env.STICKER_DATA || "⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ〔🍉🐼〕
+
+
+🍭㆒⾛⾜⾖㆒🦊
+
+
+🌷㆒⾛⾜⾖㆒🌈
+
+
+🌩️㆒⾛⾜⾖㆒🐨
+
+
+🪁㆒⾛⾜⾖㆒🌗
+
+
+🍉㆒⾛⾜⾖㆒🍓
+
+
+🍒㆒⾛⾜⾖㆒🍿;
+
+ㅤㅤㅤ⁹
+
+ㅤㅤㅤ⁶
+
+ㅤㅤㅤ³
+
+ㅤㅤㅤ³
+
+ㅤㅤㅤ⁶
+
+ㅤㅤㅤ⁰
+
+ㅤㅤㅤ⁵
+
+ㅤㅤㅤ⁶
+
+ㅤㅤㅤ⁴
+
+ㅤㅤㅤ⁸",
+    BOT_NAME: process.env.BOT_NAME || '𝐗ᴏᴜʟ 𝐌ᴅ',
+    AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ〔🍉🐼〕;🍃ഇ͎ꫧ᪳͢გവ᪳გ͎◕ കട᪳൬͎გ ලപꪆവ᪳გ◕🕊️;https://i.imgur.com/CoAcgTb.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
-    MODE: process.env.MODE || 'private',
+    MODE: process.env.MODE || 'public',
     WARN: process.env.WARN || '4',
     ANTILINK_WARN: process.env.ANTILINK_WARN || '',
     HEROKU: {
