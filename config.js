@@ -1,4 +1,4 @@
-vconst fs = require('fs');
+const fs = require('fs');
 const { Sequelize } = require('sequelize');
 const isVPS = !(__dirname.startsWith("/rgnk") || __dirname.startsWith("/skl"));
 const isHeroku = __dirname.startsWith("/skl");
