@@ -25,13 +25,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 if (!(process.env.SESSION || process.env.SESSION_ID)) throw new Error("No session found, add session before starting bot")
 module.exports = {
     VERSION: 'v4.0.0',
-    ALIVE: process.env.ALIVE || "*✰ 𝐇͢ᴇ⃗ʏʏ᷏ {sender}*
- 
-*✰ 𝐘͢ᴇ⃗ʜʜ᷏ 𝐈͢ᴍ ᷏𝐇͢ᴇ⃗ʀᴇ᷏*
-
-*✰ 𝐘͢ᴇ⃗ʜʜ᷏ 𝐈͢ᴛ⃗s᷏ 𝐌͢ᴇ 𝐗͢ᴏ⃗ᴜʟ᷏ 𝐒͢ᴇ⃗ʀ᷏*
-
-*✰ 𝐄͢ᴅ⃗ᴀ᷏ 𝐌͢ᴡ⃗ᴏɴᴇ᷏ 𝐇͢ᴀ⃗ᴘᴘʏ᷏ 𝐀͢ʟ⃗ʟᴇ᷏*",
+    ALIVE: process.env.ALIVE || "_*𝐇ᴇʏʏ {sender}⁩ 𝐈ᴍ 𝐒ᴛɪʟʟ 𝐀ʟɪᴠᴇ 🫀🫂*_",
     BLOCK_CHAT: process.env.BLOCK_CHAT || '',
     PM_ANTISPAM: convertToBool(process.env.PM_ANTISPAM) || '',
     ALWAYS_ONLINE: convertToBool(process.env.ALWAYS_ONLINE) || true,
@@ -55,54 +49,26 @@ module.exports = {
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
-    SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~8fc243ce990a4db1a8f883e8f8c036a7:5a2b5655592f55784d6d4d3d').trim() || '',
+    SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~883730b8268c8636d813126a049b9f0b:796268677a754636414e493d').trim() || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || '𝐗ᴏᴜᴋ 𝐌ᴅ;𝐗ᴏᴜʟ 𝐒ᴇʀ;0;https://i.imgur.com/CoAcgTb.jpeg;https://chat.whatsapp.com/BxR0LrCkAVKGHriVvo7sKy',
+    BOT_INFO: process.env.BOT_INFO || '𝐗ᴏᴜᴋ 𝐌ᴅ;𝐗ᴏᴜʟ 𝐒ᴇʀ;0;https://i.imgur.com/CoAcgTb.jpeg;https://chat.whatsapp.com/Ln6PUAjwZhiBvcEKLG6KQl',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ〔🍉🐼〕
-
-
-🍭㆒⾛⾜⾖㆒🦊
-
-
-🌷㆒⾛⾜⾖㆒🌈
-
-
-🌩️㆒⾛⾜⾖㆒🐨
-
-
-🪁㆒⾛⾜⾖㆒🌗
-
-
-🍉㆒⾛⾜⾖㆒🍓
-
-
-🍒㆒⾛⾜⾖㆒🍿;
-
-ㅤㅤㅤ⁹
-
-ㅤㅤㅤ⁶
-
-ㅤㅤㅤ³
-
-ㅤㅤㅤ³
-
-ㅤㅤㅤ⁶
-
-ㅤㅤㅤ⁰
-
-ㅤㅤㅤ⁵
-
-ㅤㅤㅤ⁶
-
-ㅤㅤㅤ⁴
-
-ㅤㅤㅤ⁸",
+    STICKER_DATA: process.env.STICKER_DATA || "ㅤ⺀𑁍 𝑺 𝜟 𝜝 𝜟 𝜞 𝛪  ▸ᝃ〔🧃〕
+ㅤ
+ㅤ
+ㅤ
+〝 ┊𝚻ʜᴇ 𝐒ᴜɴ 𝐈s 𝚩ᴇᴜᴛɪғᴜʟ ...🌝
+ㅤ
+ㅤ
+〝 ┊𝐈ꜱɴ'ᴛ  𝐈ᴛ ?💐
+ㅤ
+ㅤ
+〝 ┊⁹⁶³³⁶⁰⁵⁶⁴⁸ 🍭",
     BOT_NAME: process.env.BOT_NAME || '𝐗ᴏᴜʟ 𝐌ᴅ',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ〔🍉🐼〕;🍃ഇ͎ꫧ᪳͢გവ᪳გ͎◕ കട᪳൬͎გ ලപꪆവ᪳გ◕🕊️;https://i.imgur.com/CoAcgTb.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
