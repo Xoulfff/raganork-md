@@ -49,26 +49,16 @@ module.exports = {
     REJECT_CALLS: convertToBool(process.env.REJECT_CALLS) || false,
     PMB: process.env.PMB || '_Personal messages not allowed, BLOCKED!_',
     READ_COMMAND: convertToBool(process.env.READ_COMMAND) || true,
-    SESSION: (process.env.SESSION || process.env.SESSION_ID || 'Raganork~883730b8268c8636d813126a049b9f0b:796268677a754636414e493d').trim() || '',
+    SESSION: (process.env.SESSION || process.env.SESSION_ID) || '',
     IMGBB_KEY: ["76a050f031972d9f27e329d767dd988f", "deb80cd12ababea1c9b9a8ad6ce3fab2", "78c84c62b32a88e86daf87dd509a657a"],
     RG: process.env.RG || '919074309534-1632403322@g.us,120363116963909366@g.us',
-    BOT_INFO: process.env.BOT_INFO || '𝐗ᴏᴜᴋ 𝐌ᴅ;𝐗ᴏᴜʟ 𝐒ᴇʀ;0;https://i.imgur.com/CoAcgTb.jpeg;https://chat.whatsapp.com/Ln6PUAjwZhiBvcEKLG6KQl',
+    BOT_INFO: process.env.BOT_INFO || 'Raganork;Sabari.yy;0;https://i.imgur.com/CoAcgTb.jpeg;https://chat.whatsapp.com/Ln6PUAjwZhiBvcEKLG6KQl',
     RBG_KEY: process.env.RBG_KEY || '',
     ALLOWED: process.env.ALLOWED || '91,94,2',
     NOT_ALLOWED: process.env.ALLOWED || '91,94,212',
     CHATBOT: process.env.CHATBOT || 'off',
     HANDLERS: process.env.HANDLERS || '.,',
-    STICKER_DATA: process.env.STICKER_DATA || "ㅤ⺀𑁍 𝑺 𝜟 𝜝 𝜟 𝜞 𝛪  ▸ᝃ〔🧃〕
-ㅤ
-ㅤ
-ㅤ
-〝 ┊𝚻ʜᴇ 𝐒ᴜɴ 𝐈s 𝚩ᴇᴜᴛɪғᴜʟ ...🌝
-ㅤ
-ㅤ
-〝 ┊𝐈ꜱɴ'ᴛ  𝐈ᴛ ?💐
-ㅤ
-ㅤ
-〝 ┊⁹⁶³³⁶⁰⁵⁶⁴⁸ 🍭",
+    STICKER_DATA: process.env.STICKER_DATA || "⺀𑁍 𝑺 𝚨 𝜝 𝜜 𝜞 𝜤  ▸ᝃ〔🧃〕",
     BOT_NAME: process.env.BOT_NAME || '𝐗ᴏᴜʟ 𝐌ᴅ',
     AUDIO_DATA: process.env.AUDIO_DATA === undefined || process.env.AUDIO_DATA === "private" ? '⺀𑁍 𝚾͢ᴏ᪳ᴜ᪳ʟ᷏᪳ 𝐒͢ᴇ᪳ʀ᷏᪳ ▸ᝃ〔🍉🐼〕;🍃ഇ͎ꫧ᪳͢გവ᪳გ͎◕ കട᪳൬͎გ ලപꪆവ᪳გ◕🕊️;https://i.imgur.com/CoAcgTb.jpeg' : process.env.AUDIO_DATA,
     TAKE_KEY: process.env.TAKE_KEY || '',
